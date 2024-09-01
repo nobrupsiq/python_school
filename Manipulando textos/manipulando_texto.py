@@ -3,8 +3,8 @@ frase = 'Curso em Video Python'
 
 # Começa do caracter numero 9 e termina no caracter 21 pulando de dois em dois
 frase[9:21:2]  # Quando eu omito de onde irá começar, irá começar contar do zero
-frase[:5]  # Indiquei o inicio e não sei o final. Inicia do caracter 15 até o final
-frase[15:]
+frase[:5]
+frase[15:]  # Indiquei o inicio e não sei o final. Inicia do caracter 15 até o final
 frase[9::3]  # Inicia do caracter 9 e vai pulando de 3 em 3 até o final.
 len(frase)  # Conta quantos caracter possui.
 frase.count('o')  # Irá mostrar quantas vezes possui um caracter em uma string
@@ -25,4 +25,4 @@ frase.lstrip()  # Remove todos os espaços inuteis da esquerda
 # FUNCIONALIDADES DE DIVISÃO DE STRINGS
 
 frase.split()  # Divide as palavras onde tem um espaço, e transforma em uma lista
-print(' '.join(frase.split()))
+' '.join(frase.split())
