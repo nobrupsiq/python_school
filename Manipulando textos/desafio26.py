@@ -3,3 +3,7 @@
 # Quantas vezes aparece a letra 'A':
 # Em que posição ela aparece a primeira vez.
 # Em que posicao ela aparece a última vez.
+frase = 'Um sapo no jardim de casa'.upper()
+print('A letra "A" aparece:', frase.count('A'), 'vezes!')
+print('A primeira letra "A" apareceu na posição {}'.format(frase.find('A')+1))
+print('A ultima letra "A" apareceu na posição {}'.format(frase.rfind('A')+1))
