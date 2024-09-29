@@ -18,3 +18,17 @@ atual = date.today().year
 ano_de_nascimento = int(input('Ano de nascimento: '))
 idade = atual - ano_de_nascimento
 
+print(f'Quem nasceu em {ano_de_nascimento} tem {idade} anos em {atual}')
+
+if idade == 18:
+  print('Voce tem que se alistar IMEDIATAMENTE')
+elif idade < 18:
+  saldo = 18 - idade
+  print(f'Ainda faltam {saldo} anos para o alistamento.')
+  ano = atual + saldo
+  print(f'Seu alistamento será em {ano}')
+elif idade > 18:
+  saldo = idade - 18
+  ano = atual - saldo
+  print(f'Você já deveria ter se alistado a {saldo} anos.')
+  print(f'Seu alistamento foi em {ano}')
