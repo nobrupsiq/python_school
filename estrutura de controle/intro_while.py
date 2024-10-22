@@ -14,7 +14,6 @@ n = 1
 par = 0
 impar = impar = 0
 
-
 while n != 0:
   n = int(input('Digite um valor: '))
   if n != 0:
