@@ -10,13 +10,12 @@ Crie um programa que leia dois valores e mostre um menu na tela:
 Seu programa deverá realizar a operação solicitada em cada caso.
 """
 
-
 primeiro_numero = float(input('Digite o primeiro número: '))
 segundo_numero = float(input('Digite o segundo número: '))
 
 escolha_do_usuario = 0
 
-while escolha_do_usuario != 5:
+while escolha_do_usuario != '5':
     escolha_do_usuario = input("""
         O que você quer fazer com os seus números?
 
@@ -30,7 +29,6 @@ while escolha_do_usuario != 5:
     if escolha_do_usuario == '1':
         soma = primeiro_numero + segundo_numero
         print(f'A soma dos dos números: {primeiro_numero} e {segundo_numero} é {soma}')
-
 
     if escolha_do_usuario == '2':
         multiplicacao = primeiro_numero * segundo_numero
@@ -47,6 +45,6 @@ while escolha_do_usuario != 5:
         segundo_numero = float(input('Digite o 2° novo número: '))
         
     if escolha_do_usuario == '5':
-        escolha_do_usuario += 5
+        escolha_do_usuario = '5'
         
 
