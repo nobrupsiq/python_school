@@ -5,10 +5,8 @@ B) Quantos homens foram cadastrados
 C) Quantas mulheres tem menos de 20 anos
 """
 
-maior_de_idade = 0
-homens_cadastrados = 0
-mulheres_menos_20 = 0
-total_cadastrados = 0
+maior_de_idade = homens_cadastrados = homens_cadastrados = mulheres_menos_20 = total_cadastrados = 0
+
 
 while True:
   print('-'*23)
@@ -17,11 +15,11 @@ while True:
   idade_da_pessoa = int(input('Idade: '))
   sexo_da_pessoa = str(input('Sexo [M/F]: ')).upper().strip()
 
-  while sexo_da_pessoa != 'M' and sexo_da_pessoa != 'F':
+  while sexo_da_pessoa not in 'SN':
     sexo_da_pessoa = str(input('Sexo [M/F]: ')).upper().strip()
   total_cadastrados += 1
 
-  if idade_da_pessoa > 18:
+  if idade_da_pessoa >= 18:
     maior_de_idade += 1
   if sexo_da_pessoa == 'M':
     homens_cadastrados += 1
