@@ -27,9 +27,9 @@ while True:
       produto_de_menor_valor = valor_do_produto
       nome_do_produto_de_menor_valor = nome_do_produto
   
-  continuar = str(input('Quer continuar? [S/N] ')).upper().strip()
+  continuar = ''
   
-  while continuar != 'S' and continuar != 'N':
+  while continuar not in 'SN':
     continuar = str(input('Quer continuar? [S/N] ')).upper().strip()
   if continuar == 'N':
     break
