@@ -11,20 +11,7 @@ times = (
     "Vasco da Gama", "Vitória", "Juventude", "Grêmio", "Athletico-PR",
     "Fluminense", "Criciúma", "Bragantino", "Cuiabá", "Atlético-GO"
 )
-
-for index, time in enumerate(times):
-  if index == 5:
-    break
-  print(time)
-
-for index, time in enumerate(reversed(times)):
-  if index == 5:
-    break
-  print(time)
-
-for i in sorted(times):
-  print(i)
-
-for index, time in enumerate(times):
-  if time == 'Juventude':
-    print(f'Posição: {index} Time: {time}')
+print(f'Lista de times do Brasileirão: {times}')
+print(f'Os 5 primeiros são: {times[0:5]}')
+print(f'Os 4 últimos são: {times[-1:-5:-1]}')
+print(f'Times em ordem alfabética: {sorted(times)}')
